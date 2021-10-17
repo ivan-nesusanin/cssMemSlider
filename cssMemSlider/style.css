@@ -132,17 +132,17 @@ input[name="rb"] {
 }
 
 #rb2:checked ~ .slider .slide1,
-#rb1:checked ~ .under-wrapper .caption-wrapper .caption-slider .caption1 {
+#rb2:checked ~ .under-wrapper .caption-wrapper .caption-slider .caption1 {
   margin-left: -25%;
 }
 
 #rb3:checked ~ .slider .slide1,
-#rb1:checked ~ .under-wrapper .caption-wrapper .caption-slider .caption1 {
+#rb3:checked ~ .under-wrapper .caption-wrapper .caption-slider .caption1 {
   margin-left: -50%;
 }
 
 #rb4:checked ~ .slider .slide1,
-#rb1:checked ~ .under-wrapper .caption-wrapper .caption-slider .caption1 {
+#rb4:checked ~ .under-wrapper .caption-wrapper .caption-slider .caption1 {
   margin-left: -75%;
 }
 
