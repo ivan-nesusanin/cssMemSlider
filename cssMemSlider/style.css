@@ -4,19 +4,23 @@
   --active-color: #fff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 10px;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-size: 1.6rem;
   font-family: 'Noto Serif', serif;
   background-color: var(--fon-color);
 }
 
 .title {
+  margin: 4vh 0;
   text-align: center;
   font-size: 3rem;
   letter-spacing: 0.3rem;
@@ -24,54 +28,29 @@ body {
   color: var(--text-color);
 }
 
-h1 {
-  margin: 40px 0 0 0;
-}
-
 .slider-wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 2vh;
-  max-width: 1440px;
+  row-gap: 5vh;
+  max-width: 900px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .slider {
   display: flex;
-  column-gap: 100px;
-  height: 70vh;
-  overflow: hidden;
+  width: 400%;
+  transition: all ease 0.5s;
 }
 
 .slide {
-  display: none;
+  width: 25%;
+  transition: all ease 0.5s;
 }
-
-.slide.active {
-  display: block;
-}
-
 
 .slide img {
-  height: 100%;
-  /* margin: 0 auto; */
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  font-size: 5rem;
-  color: var(--text-color);
-}
-
-.btn-prev,
-.btn-next {
-  cursor: pointer;
-}
-
-.btn-prev:hover,
-.btn-next:hover {
-  color: var(--active-color)
+  width: 100%;
+  /* height: 100%; */
 }
 
 .under-wrapper {
@@ -79,35 +58,70 @@ h1 {
   justify-content: space-between;
 }
 
-.caption {
-  font-size: 3.3rem;
+.caption-wrapper {
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.caption-slider {
+  display: flex;
+  width: 400%;
+  transition: all ease 0.5s;
+}
+
+.caption p {
+  font-size: 3rem;
   letter-spacing: 0.2rem;
 }
 
-.dots-wrapper {
+.active {
   display: flex;
   align-items: center;
 }
 
-.dot {
+.active label {
   width: 20px;
   height: 20px;
+  margin: 0 10px;
   border: 3px solid var(--text-color);
   border-radius: 50%;
   background-color: var(--text-color);
-  margin-right: 15px;
   cursor: pointer;
+  transition: all ease 0.5s;
 }
 
-.dot.active {
-  background-color: var(--fon-color);
+.active label:before {
+  display: block;
+  content: '';
+  width: 170%;
+  height: 170%;
 }
 
-.dot:hover {
+.active label:hover {
   background-color: var(--active-color);
 }
 
-.dot.active:hover {
-  border: 3px solid var(--active-color);
-  background-color: var(--fon-color);
+#rb1:checked ~ .active label:nth-child(1) {
+  background-color: var(--fon-color) !important;
+}
+
+input[name="rb"] {
+  display: none;
+  visibility: hidden;
+}
+
+#rb1:checked ~ .s1 {
+  margin-left: 0%;
+}
+
+#rb2:checked ~ .s1 {
+  margin-left: -25%;
+}
+
+#rb3:checked ~ .s1 {
+  margin-left: -50%;
+}
+
+#rb4:checked ~ .s1 {
+  margin-left: -75%;
 }

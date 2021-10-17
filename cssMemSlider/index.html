@@ -14,12 +14,12 @@
       <h1>My favorite mems</h1>
     </div>
     <div class="slider-wrapper">
-      <div class="buttons">
-        <div class="btn-prev"><<</div>
-        <div class="btn-next">>></div>
-      </div>
       <div class="slider">
-        <div class="slide active">
+        <input type="radio" name="rb" id="rb1" checked>
+        <input type="radio" name="rb" id="rb2">
+        <input type="radio" name="rb" id="rb3">
+        <input type="radio" name="rb" id="rb4">
+        <div class="slide s1">
           <img src="./assets/1.jpg" alt="1">
         </div>
         <div class="slide">
@@ -33,18 +33,40 @@
         </div>
       </div>
       <div class="under-wrapper">
-        <div class="caption">
-          <p>Brainstorm is very effective instrument</p>
+        <div class="caption-wrapper">
+          <div class="caption-slider">
+            <input type="radio" name="rb" id="rb1" checked>
+            <input type="radio" name="rb" id="rb2">
+            <input type="radio" name="rb" id="rb3">
+            <input type="radio" name="rb" id="rb4">
+            <div class="caption s1">
+              <p class="s1">Brainstorm is very effective instrument</p>
+            </div>
+            <div class="caption">
+              <p>Top motivation!</p>
+            </div>
+            <div class="caption">
+              <p>How do I perform code debag</p>
+            </div>
+            <div class="caption">
+              <p>There is always such a dude in the comments</p>
+            </div>
+          </div>
         </div>
         <div class="dots-wrapper">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+          <label for="rb1"></label>
+          <label for="rb2"></label>
+          <label for="rb3"></label>
+          <label for="rb4"></label>
+        </div>
+        <div class="active">
+          <label for="rb1"></label>
+          <label for="rb2"></label>
+          <label for="rb3"></label>
+          <label for="rb4"></label>
         </div>
       </div>
     </div>
   </main>
-  <script src="script.js"></script>
 </body>
 </html>
