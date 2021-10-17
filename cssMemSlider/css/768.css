@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .slider-wrapper {
+    row-gap: 4vh;
+    max-width: 708px;
+  }
+
+  .under-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 1.5vh;
+  }
+
+  .caption-wrapper {
+    align-self: flex-start;
+  }
+
+  .caption p {
+    font-size: 2.5rem;
+  }
+
+  .active label {
+    width: 15px;
+    height: 15px;
+  }
+}

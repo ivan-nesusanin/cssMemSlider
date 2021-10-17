@@ -22,8 +22,8 @@ body {
 .title {
   margin: 4vh 0;
   text-align: center;
-  font-size: 3rem;
-  letter-spacing: 0.3rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   color: var(--text-color);
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .caption-wrapper {
-  max-width: 500px;
+  width: 65%;
   overflow: hidden;
 }
 
@@ -72,6 +72,7 @@ body {
 .caption p {
   font-size: 3rem;
   letter-spacing: 0.2rem;
+  padding: 0 50px 0 10px;
 }
 
 .active {
@@ -101,7 +102,10 @@ body {
   background-color: var(--active-color);
 }
 
-#rb1:checked ~ .active label:nth-child(1) {
+#rb1:checked ~ .active label:nth-child(1),
+#rb2:checked ~ .active label:nth-child(2),
+#rb3:checked ~ .active label:nth-child(3),
+#rb4:checked ~ .active label:nth-child(4) {
   background-color: var(--fon-color) !important;
 }
 
